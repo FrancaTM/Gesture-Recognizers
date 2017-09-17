@@ -12,6 +12,9 @@
 		3F0AD0DD1F6039F000FE2BC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F0AD0DB1F6039F000FE2BC4 /* Main.storyboard */; };
 		3F0AD0DF1F6039F000FE2BC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F0AD0DE1F6039F000FE2BC4 /* Assets.xcassets */; };
 		3F0AD0E21F6039F000FE2BC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F0AD0E01F6039F000FE2BC4 /* LaunchScreen.storyboard */; };
+		3F32F0C31F65EB6B009F9B51 /* chomp.caf in Resources */ = {isa = PBXBuildFile; fileRef = 3F32F0C11F65E90D009F9B51 /* chomp.caf */; };
+		3F32F0C41F65EB6D009F9B51 /* hehehe1.caf in Resources */ = {isa = PBXBuildFile; fileRef = 3F32F0C21F65E915009F9B51 /* hehehe1.caf */; };
+		3F5207DA1F6D867200872B09 /* TickleGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5207D91F6D867200872B09 /* TickleGestureRecognizer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		3F0AD0DE1F6039F000FE2BC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F0AD0E11F6039F000FE2BC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F0AD0E31F6039F000FE2BC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F32F0C11F65E90D009F9B51 /* chomp.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = chomp.caf; sourceTree = "<group>"; };
+		3F32F0C21F65E915009F9B51 /* hehehe1.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = hehehe1.caf; sourceTree = "<group>"; };
+		3F5207D91F6D867200872B09 /* TickleGestureRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickleGestureRecognizer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,12 +60,15 @@
 		3F0AD0D61F6039F000FE2BC4 /* Gesture Recognizer Tutorial */ = {
 			isa = PBXGroup;
 			children = (
+				3F32F0C21F65E915009F9B51 /* hehehe1.caf */,
+				3F32F0C11F65E90D009F9B51 /* chomp.caf */,
 				3F0AD0D71F6039F000FE2BC4 /* AppDelegate.swift */,
 				3F0AD0D91F6039F000FE2BC4 /* ViewController.swift */,
 				3F0AD0DB1F6039F000FE2BC4 /* Main.storyboard */,
 				3F0AD0DE1F6039F000FE2BC4 /* Assets.xcassets */,
 				3F0AD0E01F6039F000FE2BC4 /* LaunchScreen.storyboard */,
 				3F0AD0E31F6039F000FE2BC4 /* Info.plist */,
+				3F5207D91F6D867200872B09 /* TickleGestureRecognizer.swift */,
 			);
 			path = "Gesture Recognizer Tutorial";
 			sourceTree = "<group>";
@@ -96,6 +105,7 @@
 				TargetAttributes = {
 					3F0AD0D31F6039F000FE2BC4 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -123,6 +133,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F32F0C41F65EB6D009F9B51 /* hehehe1.caf in Resources */,
+				3F32F0C31F65EB6B009F9B51 /* chomp.caf in Resources */,
 				3F0AD0E21F6039F000FE2BC4 /* LaunchScreen.storyboard in Resources */,
 				3F0AD0DF1F6039F000FE2BC4 /* Assets.xcassets in Resources */,
 				3F0AD0DD1F6039F000FE2BC4 /* Main.storyboard in Resources */,
@@ -137,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F0AD0DA1F6039F000FE2BC4 /* ViewController.swift in Sources */,
+				3F5207DA1F6D867200872B09 /* TickleGestureRecognizer.swift in Sources */,
 				3F0AD0D81F6039F000FE2BC4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,12 +287,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5A3AF876N5;
 				INFOPLIST_FILE = "Gesture Recognizer Tutorial/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.onetech.Gesture-Recognizer-Tutorial";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -289,6 +304,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5A3AF876N5;
 				INFOPLIST_FILE = "Gesture Recognizer Tutorial/Info.plist";

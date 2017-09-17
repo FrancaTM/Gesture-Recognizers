@@ -6,6 +6,13 @@
 //  Copyright © 2017 0neTech. All rights reserved.
 //
 
+// UIGestureRecognizer Tutorial: Getting Started
+// https://www.raywenderlich.com/162745/uigesturerecognizer-tutorial-getting-started
+
+//alex_​andrews
+//
+//Hi Brody, great tutorial! I definitely found it useful. For the custom UIGestureRecognizer, I believe it’s possible to simply import UIKit.UIGestureRecognizerSubclass directly into the Swift file instead of adding the bridging header. Do you know if there is any downside to using this approach?
+
 import UIKit
 
 @UIApplicationMain
